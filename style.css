@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Advised Color Theme for this website (Contributed by @vikasx08) 
+   (1) #222831
+   (2) #393E46
+   (3) #00ADB5
+   (4) #EEEEEE
+
+   Do use these color for further styling 
+*/
+
+
+#main {  
+    width: 100vw;
+    background-color: #222831;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: rgba(255, 255, 255, 0); 
+    padding: 10px 20px;
+    backdrop-filter: blur(10px); 
+    color: #EEEEEE;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #EEEEEE;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00ADB5;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    top: 100%;
+    left: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style your logo as needed */
+.logo img {
+    max-width: 100px;
+}
