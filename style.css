@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -22,9 +24,11 @@ html, body {
 #main {  
     width: 100vw;
     background-color: #222831;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navbar {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,6 +37,7 @@ html, body {
     padding: 10px 20px;
     backdrop-filter: blur(10px); 
     color: #EEEEEE;
+    width: 100vw;
 }
 
 .nav-links {
@@ -65,7 +70,7 @@ html, body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #393E46;
     backdrop-filter: blur(10px);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     top: 100%;
@@ -76,7 +81,57 @@ html, body {
     display: block;
 }
 
-/* Style your logo as needed */
 .logo img {
     max-width: 100px;
 }
+
+#page1 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#page1 .landingscreen-left {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+    padding: 5% 0 5% 10%;
+    color: #EEEEEE;
+    text-align: left;
+}
+
+#page1 .landingscreen-left h1 {
+    font-size: 8vh;
+}
+
+#page1 .landingscreen-right {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page1 .landingscreen-right img {
+    height: inherit;
+    width: inherit;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
